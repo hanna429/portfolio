@@ -1,0 +1,25 @@
+/* Keep styles simple and avoid !important unless absolutely necessary */
+:root {
+  --bg-col: red; 
+}
+
+/* Global body styling */
+body {
+  background-color: black !important;
+  color: rgb(255, 255, 255) !important;
+  font-family: 'Inter' !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add top padding so content isn't hidden behind fixed navbar */
+.main-content {
+  padding-top: 80px; /* Adjust this to match your navbar height */
+}
+
+/* Optional: gradient text style placeholder */
+.gradient-txt {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

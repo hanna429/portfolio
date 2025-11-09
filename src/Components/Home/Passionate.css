@@ -1,0 +1,58 @@
+.passion-section{
+    text-align: center;
+    padding: 80px 20px;
+}
+.passion-heading {
+    font-family: "Playfair Display", serif;
+    font-style:oblique;
+    font-weight: 400;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #59615e,#e9eef4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: text;
+    text-fill-color:transparent;
+    margin-bottom: 50px;
+    letter-spacing: 0.5px;
+    
+}
+.marquee-container{
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 15px 15px;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow:  0 0 15px rgba(255, 255, 255, 0.05);
+}
+.marquee{
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+.marquee span{
+    font-size: 1rem;
+    color: #e6e6e6;
+    font-family: 'Inter',sans-serif;
+
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .passion-heading {
+    font-size: 1.5rem;
+  }
+  .marquee span {
+    font-size: 0.9rem;
+  }
+}
