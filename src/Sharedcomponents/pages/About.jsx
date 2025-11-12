@@ -4,7 +4,7 @@ import Aboutt from '../../Components/Home/Aboutt'
 import Footer from '../Footer'
 import Avathar from '../../Components/Home/Avathar'
 
-function Ab() {
+function About() {
   return (
     <div>
 
@@ -25,4 +25,4 @@ function Ab() {
   )
 }
 
-export default Ab
+export default About;

@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import Home from "./Sharedcomponents/pages/Home"
 import Work from "./Sharedcomponents/pages/Work"
 import More from "./Sharedcomponents/More"
-import Ab from "./Sharedcomponents/pages/ab"
+import About from "./Sharedcomponents/pages/About"
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>    
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/ab" element={<Ab/>}/>
+      <Route path="/about" element={<About/>}/>
        <Route path="/work" element={<Work/>}/>
        <Route path="/more" element={<More/>}/>
 
