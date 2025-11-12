@@ -1,0 +1,67 @@
+/* Avatar Section Wrapper */
+.avatar-wrapper {
+  display: flex;
+  justify-content:start ;
+  align-items: center;
+  padding: 0px;
+  margin-left: 100px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  /* margin-top: 50px !important; */
+}
+
+/* Avatar Container */
+.avatar-section {
+  text-align: center;
+  color: #fff;
+}
+
+/* Profile Image — Rounded */
+.avatar-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;          /* ✅ Makes it perfectly round */
+  object-fit: cover;           /* Keeps image proportions */
+  border: 3px solid #fff;      /* White border around image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover zoom effect */
+.avatar-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Name */
+.avatar-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family:"Playfair Display", serif;
+  margin-top: 20px;
+  color: #dbd6d6;
+}
+
+/* Role */
+.avatar-role{
+  font-size: 1.1rem;
+  color:white !important;
+  margin: 5px 0;
+}
+
+/* Email */
+.avatar-email {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.avatar-email a {
+  color: #e3eaec;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.avatar-email a:hover {
+  text-decoration: underline;
+}

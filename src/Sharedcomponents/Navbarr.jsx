@@ -34,13 +34,13 @@ function Navbarr() {
             <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/about" onClick={() => setExpanded(false)}>
+            <Nav.Link as={Link} to="/ab" onClick={() => setExpanded(false)}>
               About
             </Nav.Link>
-            <Nav.Link href="#work" onClick={() => setExpanded(false)}>
+            <Nav.Link as={Link} to="/work" onClick={() => setExpanded(false)}>
               Work
             </Nav.Link>
-            <Nav.Link href="#more" onClick={() => setExpanded(false)}>
+            <Nav.Link as={Link} to="/more" onClick={() => setExpanded(false)}>
               More
             </Nav.Link>
           </Nav>

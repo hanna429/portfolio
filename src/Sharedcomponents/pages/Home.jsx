@@ -3,6 +3,8 @@ import Navbarr from '../Navbarr'
 import Her from '../../Components/Home/Her'
 import Passionate from '../../Components/Home/Passionate'
 import Project from '../../Components/Home/Project'
+import Footer from '../Footer'
+import Aboutt from '../../Components/Home/Aboutt'
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
         <Her/>
         <Passionate/>
         <Project/>
+        <Aboutt/>
+        <Footer/>
     </div>
   )
 }

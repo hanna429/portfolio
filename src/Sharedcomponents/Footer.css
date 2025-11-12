@@ -1,0 +1,216 @@
+/* --- Global Styles & Variables --- */
+/* Ensure the fonts are linked in index.html */
+/* 'Playfair Display' (Headings) and 'Roboto' (Body) */
+
+:root {
+  --primary-bg: #000000;
+  --primary-text: #ffffff;
+  --secondary-text: #cccccc;
+  --subtle-text: #666666;
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Roboto', sans-serif;
+  --button-color: #ffffff;
+}
+
+/* ------------------------------------------
+  1. CONTACT SECTION STYLES (Centered)
+  ------------------------------------------
+*/
+.contact-container {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-family: var(--body-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-section {
+    max-width: 800px;
+}
+
+.contact-heading {
+    font-family: var(--heading-font);
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.connect-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 9999px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-family: var(--body-font);
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 80px;
+}
+
+.connect-button:hover {
+    background-color: var(--button-color);
+    color: var(--primary-bg);
+}
+
+.availability-info {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.availability-status {
+    color: var(--primary-text);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.availability-status strong {
+    font-weight: 700;
+}
+
+.availability-detail {
+    color: var(--secondary-text);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ------------------------------------------
+  2. NEW FOOTER NAVIGATION SECTION (Container)
+  ------------------------------------------
+*/
+.footer-nav-container {
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    color: var(--primary-text);
+}
+
+.footer-about {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--secondary-text);
+    margin-top: 10px;
+}
+
+/* Right Side Navigation List */
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.footer-list-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-text);
+    margin-bottom: 12px;
+}
+
+.footer-list li {
+    font-size: 16px;
+    color: var(--secondary-text);
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.footer-list li:hover {
+    color: var(--primary-text);
+    transform: translateX(6px);
+}
+
+/* ------------------------------------------
+  3. COPYRIGHT FOOTER SECTION
+  ------------------------------------------
+*/
+.portfolio-footer {
+  background-color: var(--primary-bg);
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #1a1a1a;
+  font-family: var(--body-font);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text,
+.footer-credits {
+  color: var(--subtle-text);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+  font-weight: 300;
+}
+
+.footer-credits {
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* ------------------------------------------
+  4. MEDIA QUERIES (Responsiveness)
+  ------------------------------------------
+*/
+@media (max-width: 768px) {
+  .contact-container {
+      padding: 60px 20px;
+      margin-top: 30px;
+      min-height: auto;
+  }
+
+  .contact-heading {
+      font-size: 36px;
+  }
+
+  .connect-button {
+      padding: 10px 20px;
+      font-size: 14px;
+      margin-bottom: 60px;
+  }
+
+  .availability-status {
+      font-size: 16px;
+  }
+
+  .availability-detail {
+      font-size: 14px;
+  }
+
+  /* Footer section */
+  .footer-list-title {
+      font-size: 18px;
+  }
+
+  .footer-list li {
+      font-size: 14px;
+  }
+
+  .portfolio-footer {
+      padding: 20px 10px;
+  }
+
+  .footer-text,
+  .footer-credits {
+      font-size: 12px;
+  }
+}

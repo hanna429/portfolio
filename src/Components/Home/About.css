@@ -1,0 +1,102 @@
+
+
+:root {
+  --primary-bg: #000000; /* Pure black background */
+  --primary-text: #ffffff; /* Pure white text for main heading/icons */
+  --secondary-text: #cccccc; /* Lighter text for body/subtitle */
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Roboto', sans-serif;
+  --max-content-width: 900px;
+}
+
+/* Set background for the entire page/container holding this component */
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Section Container */
+.about-me {
+  padding: 100px 40px; /* Top/Bottom padding for the section */
+  max-width: var(--max-content-width);
+  margin: 0 auto; /* Center the content block */
+}
+
+/* Subtitle: "KNOW ABOUT ME" */
+.subtitle {
+  color: var(--secondary-text);
+  font-family: var(--body-font);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* Main Heading Container: "Full-Stack Developer..." */
+.main_heading {
+  font-family: var(--heading-font);
+  font-size: 60px; /* Large, elegant font size */
+  font-weight: 400; /* Medium weight for elegance */
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  color: var(--primary-text);
+}
+
+/* Sub-Heading Span: "a little bit of everything" */
+.sub {
+    color: var(--secondary-text); 
+    font-weight: 300;
+    /* Optional: Ensure the line break is clear */
+    display: block; 
+}
+
+/* Bio Content Container */
+.bio {
+    margin-top: 30px;
+}
+
+/* Bio Paragraphs */
+.bio p {
+  font-family: var(--body-font);
+  color: var(--secondary-text);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 700px; /* Prevents paragraphs from stretching too wide */
+}
+
+/* Social Links Container */
+.social-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px; /* Spacing between icons */
+}
+
+/* Individual Social Icons (the <a> tags) */
+.social-icon {
+  color: var(--primary-text); /* Icon color */
+  transition: color 0.3s ease;
+  /* Mui Icons take size from the 'sx' prop, but this ensures click area color is correct */
+  
+  /* Remove default link underline */
+  text-decoration: none; 
+}
+
+.social-icon:hover {
+  color: #a0a0a0; /* Subtle hover effect */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 60px 20px;
+  }
+  
+  .main_heading {
+    font-size: 40px; /* Adjust font size on smaller screens */
+  }
+}
