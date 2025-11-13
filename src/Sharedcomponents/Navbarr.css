@@ -1,24 +1,50 @@
+/* ===============================
+   Custom Navbar Styles
+   =============================== */
+.custom-navbar-style {
+  background-color: black !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Toggle button (always top-right) */
 .custom-toggle {
   position: absolute;
   right: 20px;
-  top: 12px;
+  top: 15px;
   z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Navbar collapse section */
 .navbar-collapse {
   background-color: black;
   padding-bottom: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
+/* ===============================
+   Responsive behavior
+   =============================== */
 @media (max-width: 992px) {
-  .navbar-collapse {
-    text-align: center;
+  .custom-toggle {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    visibility: visible;   /* always visible */
   }
 
-  /* Move toggle button inline on mobile */
-  .custom-toggle {
-    position: static !important;  /* 👈 removes fixed right corner */
-    margin-top: 10px;
+  .navbar-collapse {
     text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    margin: 10px 0;
   }
 }

@@ -10,13 +10,7 @@ function Avathar() {
           alt="Hanna Fathima"
           className="avatar-img"
         />
-        {/* <h2 className="avatar-name mt-3">Hanna Fathima</h2>
-        <p className="avatar-role text-muted">Full-Stack Developer</p>
-        <p className="avatar-email">
-          <a href="fathimahanna429@gmail.com" className="email-link">
-            fathimahanna429@gmail.com
-          </a>
-        </p> */}
+
       </div>
     </section>
   );
