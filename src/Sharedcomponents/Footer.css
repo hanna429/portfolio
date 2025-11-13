@@ -166,6 +166,19 @@
     font-style: italic;
     font-size: 13px;
 }
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-list{
+    text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #3c3e3f; /* your hover color */
+}
+
 
 /* ------------------------------------------
   4. MEDIA QUERIES (Responsiveness)
