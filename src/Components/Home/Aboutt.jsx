@@ -35,7 +35,7 @@ function Aboutt() {
         </div>
         <div className="social-links">
           <a
-            href="https://github.com"
+            href="https://github.com/hanna429"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -43,7 +43,7 @@ function Aboutt() {
             <GitHubIcon sx={{ fontSize: 24 }} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="http://linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -59,7 +59,7 @@ function Aboutt() {
             <XIcon sx={{ fontSize: 24 }} />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/hanaa.fthmh?igsh=MWRydHJ6aGNvY3V5ZA%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
