@@ -2,10 +2,15 @@
    Custom Navbar Styles
    =============================== */
 .custom-navbar-style {
-  background-color: black !important;
+  background-color: rgba(0, 0, 0, 0.445) !important;
+  backdrop-filter: blur(20px);
   position: fixed;
   width: 100%;
   z-index: 1000;
+}
+.resume-ul{
+  list-style: none;
+  
 }
 
 /* Toggle button (always top-right) */
@@ -21,7 +26,7 @@
 
 /* Navbar collapse section */
 .navbar-collapse {
-  background-color: black;
+  /* background-color: black; */
   padding-bottom: 10px;
   text-align: center;
   transition: all 0.3s ease;

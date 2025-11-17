@@ -2,9 +2,18 @@ import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import "./Footer.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
+
+  // Smooth scroll for the contact button
+  const scrollToContact = () => {
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div>
@@ -16,9 +25,12 @@ function Footer() {
             LET'S MAKE IT HAPPEN!
           </h2>
 
-          <a href="#contact" className="connect-button">
+          {/* FIXED: No refresh + smooth scroll */}
+          <a href="https://cal.com/hanna-fathima-sujkyi">
+          <button className="connect-button text-black" onClick={scrollToContact}>
             Let's Connect
             <ArrowForwardIcon sx={{ fontSize: 20, marginLeft: "8px" }} />
+          </button>
           </a>
 
           <div className="availability-info">
@@ -51,14 +63,23 @@ function Footer() {
           <Col md={4}>
             <ul className="footer-list">
               <li className="footer-list-title">General</li>
+
               <li>
-                <a href="/" className="footer-link">Home</a>
+                <Link to="/" className="footer-link">
+                  Home
+                </Link>
               </li>
+
               <li>
-                <a href="/about" className="footer-link">About</a>
+                <Link to="/about" className="footer-link">
+                  About
+                </Link>
               </li>
+
               <li>
-                <a href="/work" className="footer-link">Project</a>
+                <Link to="/work" className="footer-link">
+                  Project
+                </Link>
               </li>
             </ul>
           </Col>
@@ -66,12 +87,13 @@ function Footer() {
           {/* Right Column */}
           <Col md={4}>
             <ul className="footer-list">
-
               <li>
-                <a href="/more" className="footer-link">More</a>
+                <Link to="/" className="footer-link">
+                  More
+                </Link>
               </li>
 
-              {/* ✅ OPTION A: Open a PDF Resume in new tab */}
+              {/* Resume opens in new tab */}
               <li>
                 <a
                   href="/hanresume.pdf"
@@ -82,12 +104,6 @@ function Footer() {
                   Resume
                 </a>
               </li>
-
-              {/* ✅ OPTION B (If you have a resume page)
-              <li>
-                <a href="/resume" className="footer-link">Resume</a>
-              </li> 
-              */}
             </ul>
           </Col>
         </Row>
@@ -99,9 +115,7 @@ function Footer() {
           <p className="footer-text">
             &copy; {currentYear} Hanna Fathima. All rights reserved.
           </p>
-          <p className="footer-credits">
-            Designed and Developed by Hanna Fathima
-          </p>
+          <p className="footer-credits">Designed and Developed by Hanna Fathima</p>
         </div>
       </footer>
     </div>

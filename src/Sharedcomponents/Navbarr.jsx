@@ -17,7 +17,7 @@ function Navbarr() {
     <Navbar
       expand="lg"
       data-bs-theme="dark"
-      className="bg-black custom-navbar-style fixed-top"
+      className=" custom-navbar-style fixed-top"
       expanded={expanded}
     >
       {/* ✅ Everything wrapped in one Container */}
@@ -32,7 +32,7 @@ function Navbarr() {
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="mx-auto text-center">
+          <Nav className="mx-auto text-center d-flex align-items-center ">
             <Nav.Link as={Link} to="/" onClick={() => setExpanded(false)}>
               Home
             </Nav.Link>
@@ -42,15 +42,18 @@ function Navbarr() {
             <Nav.Link as={Link} to="/work" onClick={() => setExpanded(false)}>
               Work
             </Nav.Link>
-            <Nav.Link
-              as="a"
-              href="/resume"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setExpanded(false)}
-            >
-              Resume
-            </Nav.Link>
+            <ul className="m-0 p-2 resume-ul">
+            <li className="m-0 p-0">
+                <a
+                  href="/hanresume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-link"
+                >
+                  Resume
+                </a>
+              </li>
+              </ul>
           </Nav>
         </Navbar.Collapse>
 

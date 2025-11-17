@@ -31,8 +31,9 @@ function Her() {
           </h2>
 
           <div className="hero-actions gap-5">
+            <a href="https://cal.com/hanna-fathima-sujkyi">
             <button className="connect-btn">Let's connect →</button>
-
+             </a>
             {/* Email Copy Section */}
             <div className="email-copy" onClick={handleCopy}>
               <ContentCopyIcon className="copy-icon" fontSize="small" />
