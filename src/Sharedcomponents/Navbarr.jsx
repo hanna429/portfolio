@@ -48,7 +48,7 @@ function Navbarr() {
                   href="/hanresume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer-link"
+                  className="resume-ul"
                 >
                   Resume
                 </a>

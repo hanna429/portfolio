@@ -10,7 +10,9 @@
 }
 .resume-ul{
   list-style: none;
-  
+  text-decoration: none;
+  color: rgb(200, 207, 213);
+ 
 }
 
 /* Toggle button (always top-right) */
